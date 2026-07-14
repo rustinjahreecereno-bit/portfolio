@@ -1,0 +1,154 @@
+{
+  "personal": {
+    "fullName": "Cereno, Rustin Jahree F.",
+    "title": "Bachelor of Science in Information Technology Student",
+    "university": "Lorma Colleges",
+    "tagline": "A first-year Bachelor of Science in Information Technology student at Lorma Colleges who is passionate about UI/UX Design and Front-End Web Development.",
+    "profileImage": "assets/images/profile.jpg",
+    "phone": "0961-600-7090",
+    "email": "rustinjahree.cereno@lorma.edu",
+    "year": "2025"
+  },
+  "about": {
+    "title": "About Me",
+    "content": "I am currently a first-year BSIT student at Lorma Colleges. I enjoy learning web development, designing user-friendly interfaces, and creating responsive websites using HTML, CSS, and Figma. My goal is to continuously improve my technical and creative skills through academic and personal projects. I'm passionate about creating beautiful, functional, and accessible digital experiences that solve real-world problems."
+  },
+  "skills": [
+    {
+      "id": 1,
+      "category": "Frontend",
+      "name": "HTML5",
+      "proficiency": 95
+    },
+    {
+      "id": 2,
+      "category": "Frontend",
+      "name": "CSS3",
+      "proficiency": 90
+    },
+    {
+      "id": 3,
+      "category": "Frontend",
+      "name": "Responsive Web Design",
+      "proficiency": 88
+    },
+    {
+      "id": 4,
+      "category": "Frontend",
+      "name": "JavaScript",
+      "proficiency": 75
+    },
+    {
+      "id": 5,
+      "category": "Design",
+      "name": "UI/UX Design",
+      "proficiency": 85
+    },
+    {
+      "id": 6,
+      "category": "Design",
+      "name": "Figma",
+      "proficiency": 90
+    },
+    {
+      "id": 7,
+      "category": "Design",
+      "name": "Wireframing & Prototyping",
+      "proficiency": 85
+    },
+    {
+      "id": 8,
+      "category": "Tools",
+      "name": "Git & GitHub",
+      "proficiency": 80
+    },
+    {
+      "id": 9,
+      "category": "Tools",
+      "name": "Visual Studio Code",
+      "proficiency": 90
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "NOVA SOLE",
+      "description": "A modern sneaker e-commerce website prototype designed in Figma. Features a clean, responsive design focusing on excellent user experience. Includes product showcase, shopping cart flow, and checkout process with interactive prototypes demonstrating user interactions.",
+      "tools": ["Figma", "UI/UX Design", "Prototyping"],
+      "image": "assets/images/nova-sole.jpg",
+      "link": "https://figma.com/design/ZRwbkHSZrPzS3Wg5yh0v4i/NOVA-SOLE?t=ekKVVXoTco0LEl0U-0",
+      "type": "UI/UX Design"
+    },
+    {
+      "id": 2,
+      "title": "GitHub Repositories",
+      "description": "Explore my programming activities, school projects, and coding exercises on GitHub. Includes web development assignments, learning projects, and personal experiments with HTML, CSS, and JavaScript.",
+      "tools": ["HTML5", "CSS3", "JavaScript"],
+      "image": "assets/images/github.jpg",
+      "link": "https://github.com/rustinjahreecereno-bit?tab=repositories",
+      "type": "Development"
+    },
+    {
+      "id": 3,
+      "title": "Dynamic Portfolio Website",
+      "description": "A fully responsive, JSON-driven personal portfolio website. Showcases my skills in web development and design. Built with semantic HTML5, modern CSS3 (Flexbox/Grid), and vanilla JavaScript. Features dynamic content rendering from JSON data.",
+      "tools": ["HTML5", "CSS3", "JavaScript", "JSON"],
+      "image": "assets/images/portfolio.jpg",
+      "link": "#",
+      "type": "Development"
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "year": "2025-Present",
+      "type": "Degree",
+      "title": "Bachelor of Science in Information Technology",
+      "institution": "Lorma Colleges",
+      "description": "First-year BSIT student focusing on web development and UI/UX design. Coursework includes responsive web design, UI/UX principles, and software fundamentals."
+    },
+    {
+      "id": 2,
+      "year": "2025",
+      "type": "Course",
+      "title": "UI/UX Design with Figma",
+      "institution": "Lorma Colleges",
+      "description": "Comprehensive course covering UI/UX design fundamentals, wireframing, prototyping, and high-fidelity design in Figma. Completed multiple design projects including e-commerce and mobile app designs."
+    },
+    {
+      "id": 3,
+      "year": "2025",
+      "type": "Course",
+      "title": "Responsive Web Design",
+      "institution": "Lorma Colleges",
+      "description": "Learned to build responsive websites using HTML5, CSS3, and JavaScript with mobile-first design approach. Created projects that work seamlessly across all device sizes."
+    },
+    {
+      "id": 4,
+      "year": "2025",
+      "type": "Course",
+      "title": "Web Development Fundamentals",
+      "institution": "Lorma Colleges",
+      "description": "Introduction to web technologies including HTML structure, CSS styling, JavaScript interactivity, and version control with Git/GitHub."
+    }
+  ],
+  "contact": {
+    "title": "Get In Touch",
+    "phone": "0961-600-7090",
+    "email": "rustinjahree.cereno@lorma.edu",
+    "socialLinks": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/rustinjahreecereno-bit"
+      },
+      {
+        "name": "Figma",
+        "url": "https://www.figma.com/@rustinjahreecereno"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2025-Present Cereno, Rustin Jahree F. All Rights Reserved.",
+    "credit": "Designed & Built by Rustin Jahree Cereno"
+  }
+}
