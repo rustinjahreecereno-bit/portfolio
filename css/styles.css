@@ -162,8 +162,8 @@ body {
 /* comment MAIN CONTENT - ADD TOP PADDING FOR FIXED HEADER */
 
 main {
-    min-height: calc(100vh - 200px);
-    padding-top: 70px;
+    min-height: auto;
+    padding-top: 0;
 }
 
 section {
@@ -194,24 +194,31 @@ section h2::after {
     border-radius: 2px;
 }
 
-/* comment HERO SECTION */
+/* comment HERO SECTION - FULL SCREEN */
 
 .hero {
     background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
     color: var(--text-dark);
     text-align: center;
-    padding: 100px 20px;
+    padding: 0;
     position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
 }
 
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
 }
 
 .profile-image {
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     border: none;
     object-fit: cover;
@@ -671,10 +678,6 @@ section h2::after {
 
 /* comment TABLET: 768px and below */
 @media (max-width: 768px) {
-    main {
-        padding-top: 70px;
-    }
-
     .nav-toggle {
         display: flex;
     }
@@ -725,11 +728,13 @@ section h2::after {
     }
 
     .hero {
-        padding: 60px 20px;
+        min-height: 100vh;
+        padding: 0;
+        margin-top: 70px;
     }
 
     .hero h2 {
-        font-size: 2.2rem;
+        font-size: 2.4rem;
     }
 
     .tagline {
@@ -778,7 +783,7 @@ section h2::after {
     }
 
     main {
-        padding-top: 60px;
+        padding-top: 0;
     }
 
     section {
@@ -791,15 +796,18 @@ section h2::after {
     }
 
     .hero {
-        padding: 40px 14px;
+        min-height: 100vh;
+        padding: 0;
+        margin-top: 70px;
     }
 
     .hero h2 {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     .tagline {
         font-size: 1rem;
+        margin-bottom: 32px;
     }
 
     .profile-image {
@@ -862,11 +870,13 @@ section h2::after {
     }
 
     .hero {
-        padding: 30px 12px;
+        min-height: 100vh;
+        padding: 0;
+        margin-top: 70px;
     }
 
     .hero h2 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 
     .tagline {
