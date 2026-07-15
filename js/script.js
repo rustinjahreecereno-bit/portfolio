@@ -1,3 +1,5 @@
+/* STATE MANAGEMENT */
+
 const state = {
     personal: {},
     about: {},
@@ -8,6 +10,8 @@ const state = {
     footer: {},
     loading: true,
 };
+
+/* DOM ELEMENTS */
 
 const heroContainer = document.getElementById("heroContainer");
 const aboutContainer = document.getElementById("aboutContainer");
@@ -20,9 +24,11 @@ const navToggle = document.getElementById("navToggle");
 const navMenu = document.getElementById("navMenu");
 const navBrandName = document.getElementById("navBrandName");
 
+/* FETCH & LOAD DATA */
+
 async function loadData() {
     state.loading = true;
-    console.log("Loading data...");
+    console.log("Loading portfolio data...");
 
     try {
         const response = await fetch("data.json");
@@ -41,7 +47,7 @@ async function loadData() {
         state.footer = data.footer || {};
         state.loading = false;
 
-        console.log("Data loaded successfully:", state);
+        console.log("Data loaded successfully");
     } catch (error) {
         state.loading = false;
         console.error("Failed to load data:", error);
@@ -50,6 +56,8 @@ async function loadData() {
 
     render();
 }
+
+/* RENDER FUNCTIONS */
 
 function renderHero() {
     if (!heroContainer || !state.personal.profileImage) return;
@@ -61,15 +69,16 @@ function renderHero() {
         <a href="#projects" class="cta-button">View My Projects</a>
     `;
 
-    console.log("Rendered hero section");
+    console.log("Hero section rendered");
 }
 
 function renderAbout() {
     if (!aboutContainer || !state.about.content) return;
 
     aboutContainer.innerHTML = `<p>${state.about.content}</p>`;
-    console.log("Rendered about section");
+    console.log("About section rendered");
 }
+
 function renderSkills() {
     if (!skillsContainer) return;
 
@@ -93,7 +102,7 @@ function renderSkills() {
         )
         .join("");
 
-    console.log(`Rendered ${state.skills.length} skills`);
+    console.log(`${state.skills.length} skills rendered`);
 }
 
 function renderProjects() {
@@ -123,7 +132,7 @@ function renderProjects() {
                     ${project.tools.map((tool) => `<span class="tag">${tool}</span>`).join("")}
                 </div>
                 <a href="${project.link}" target="_blank" rel="noopener noreferrer" class="project-link">
-                    View Project →
+                    View Project
                 </a>
             </div>
         </article>
@@ -131,7 +140,7 @@ function renderProjects() {
         )
         .join("");
 
-    console.log(`Rendered ${state.projects.length} projects`);
+    console.log(`${state.projects.length} projects rendered`);
 }
 
 function renderEducation() {
@@ -156,7 +165,7 @@ function renderEducation() {
         )
         .join("");
 
-    console.log(`Rendered ${state.education.length} education items`);
+    console.log(`${state.education.length} education items rendered`);
 }
 
 function renderContact() {
@@ -185,7 +194,7 @@ function renderContact() {
         </div>
     `;
 
-    console.log("Rendered contact section");
+    console.log("Contact section rendered");
 }
 
 function renderFooter() {
@@ -196,13 +205,16 @@ function renderFooter() {
         <p>${state.footer.credit}</p>
     `;
 
-    console.log("Rendered footer");
+    console.log("Footer rendered");
 }
+
 function updateNavBrand() {
     if (navBrandName && state.personal.fullName) {
         navBrandName.textContent = state.personal.fullName;
     }
 }
+
+/* MAIN RENDER */
 
 function render() {
     updateNavBrand();
@@ -216,11 +228,13 @@ function render() {
     console.log("All sections rendered");
 }
 
+/* EVENT LISTENERS */
+
 if (navToggle && navMenu) {
     navToggle.addEventListener("click", () => {
         navToggle.classList.toggle("active");
         navMenu.classList.toggle("active");
-        console.log("📱 Mobile menu toggled");
+        console.log("Mobile menu toggled");
     });
 
     navMenu.querySelectorAll("a").forEach((link) => {
@@ -230,6 +244,8 @@ if (navToggle && navMenu) {
         });
     });
 }
+
+/* ERROR HANDLING */
 
 function showError(message) {
     console.error("Error:", message);
@@ -247,7 +263,7 @@ function showError(message) {
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         z-index: 1000;
     `;
-    errorMsg.textContent = `Error loading content: ${message}`;
+    errorMsg.textContent = `Error: ${message}`;
     document.body.prepend(errorMsg);
 
     setTimeout(() => {
@@ -255,11 +271,13 @@ function showError(message) {
     }, 5000);
 }
 
+/* INITIALIZATION */
+
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Portfolio initializing...");
     loadData();
 });
 
 window.addEventListener("load", () => {
-    console.log("Page fully loaded and ready!");
+    console.log("Page fully loaded");
 });
